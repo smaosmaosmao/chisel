@@ -6,8 +6,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/smaosmaosmao/chisel/client"
-	"github.com/smaosmaosmao/chisel/server"
+	"chisel/client"
+	"chisel/server"
 )
 
 var VERSION string = "0.0.0-src" //set via ldflags
