@@ -4,7 +4,7 @@ import (
 	"io"
 	"net"
 
-	"chisel/share"
+	"smaosmaosmao/chisel/share"
 )
 
 type Proxy struct {
