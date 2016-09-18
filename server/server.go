@@ -123,8 +123,8 @@ func (s *Server) handleHTTP(w http.ResponseWriter, r *http.Request) {
 	s.Infof("in handle http")
 	
 	if r.Header.Get("Upgrade") == "websocket,websocket" {
-		r.Header.Get("Upgrade") = "websocket" 
-		r.Header.Get("Connection") = "Upgrade" 
+	    r.Header().Set("Upgrade", "websocket")
+	    r.Header().Set("Connection", "Upgrade")
 	}
 	
 	//websockets upgrade AND has chisel prefix
