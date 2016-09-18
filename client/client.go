@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/smaosmaosmao/backoff"
-	"github.com/smaosmaosmao/chisel/share"
+	"github.com/jpillora/backoff"
+	"chisel/share"
 	"golang.org/x/crypto/ssh"
 	"golang.org/x/net/websocket"
 )
