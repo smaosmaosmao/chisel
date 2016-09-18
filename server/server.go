@@ -8,7 +8,7 @@ import (
 	"net/url"
 	"time"
 
-	"smaosmaosmao/chisel/share"
+	"github.com/smaosmaosmao/chisel/share"
 	"golang.org/x/crypto/ssh"
 	"golang.org/x/net/websocket"
 )
