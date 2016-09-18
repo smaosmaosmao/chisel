@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/jpillora/backoff"
-	"github.com/jpillora/chisel/share"
+	"github.com/smaosmaosmao/backoff"
+	"github.com/smaosmaosmao/chisel/share"
 	"golang.org/x/crypto/ssh"
 	"golang.org/x/net/websocket"
 )
@@ -147,7 +147,7 @@ func (c *Client) start() {
 			time.Sleep(d)
 		}
 
-		ws, err := websocket.Dial(c.server + "/?wap.orange.co.il/", chshare.ProtocolVersion, "http://localhost/")
+		ws, err := websocket.Dial(c.server", chshare.ProtocolVersion, "http://localhost/")
 		if err != nil {
 			connerr = err
 			continue
