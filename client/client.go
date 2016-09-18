@@ -10,7 +10,7 @@ import (
 	"time"
 
 	"github.com/jpillora/backoff"
-	"chisel/share"
+	"smaosmaosmao/chisel/share"
 	"golang.org/x/crypto/ssh"
 	"golang.org/x/net/websocket"
 )
