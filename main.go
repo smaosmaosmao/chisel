@@ -6,8 +6,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/jpillora/chisel/client"
-	"github.com/jpillora/chisel/server"
+	"github.com/smaosmaosmao/chisel/client"
+	"github.com/smaosmaosmao/chisel/server"
 )
 
 var VERSION string = "0.0.0-src" //set via ldflags
@@ -22,7 +22,7 @@ var help = `
 	  client - runs chisel in client mode
 
 	Read more:
-	  https://github.com/jpillora/chisel
+	  https://github.com/smaosmaosmao/chisel
 
 `
 
@@ -64,7 +64,7 @@ var commonHelp = `
 	  --help, This help text
 
 	Read more:
-	  https://github.com/jpillora/chisel
+	  https://github.com/smaosmaosmao/chisel
 
 `
 
