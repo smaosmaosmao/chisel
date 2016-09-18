@@ -13,7 +13,7 @@ import (
 var VERSION string = "0.0.0-src" //set via ldflags
 
 var help = `
-	Usage: chisel [command] [--help]
+	Usage: a chisel [command] [--help]
 
 	Version: ` + VERSION + `
 
