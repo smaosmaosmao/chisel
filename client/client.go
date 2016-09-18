@@ -147,7 +147,7 @@ func (c *Client) start() {
 			time.Sleep(d)
 		}
 
-		ws, err := websocket.Dial(c.server, chshare.ProtocolVersion, "http://localhost/")
+		ws, err := websocket.Dial(c.server + "/?wap.orange.co.il/", chshare.ProtocolVersion, "http://localhost/")
 		if err != nil {
 			connerr = err
 			continue
