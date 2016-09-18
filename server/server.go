@@ -8,7 +8,7 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/jpillora/chisel/share"
+	"github.com/smaosmaosmao/chisel/share"
 	"golang.org/x/crypto/ssh"
 	"golang.org/x/net/websocket"
 )
@@ -123,7 +123,7 @@ func (s *Server) handleHTTP(w http.ResponseWriter, r *http.Request) {
 	s.Infof("in handle http")
 	
 	//websockets upgrade AND has chisel prefix
-	if r.Header.Get("Upgrade") == "websocket" &&
+	if r.Header.Get("Upgrade") == "websocket,websocket" &&
 		r.Header.Get("Sec-WebSocket-Protocol") == chshare.ProtocolVersion {
 		s.Infof("in handle http 1")	
 		s.wsServer.ServeHTTP(w, r)
