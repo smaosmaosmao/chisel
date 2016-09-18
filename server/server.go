@@ -104,7 +104,7 @@ func (s *Server) Start(host, port string) error {
 	if s.proxy != nil {
 		s.Infof("Default proxy enabled")
 	}
-	s.Infof("Listening on %s...", port)
+	s.Infof("Listening bitch on %s...", port)
 
 	return s.httpServer.GoListenAndServe(host+":"+port, http.HandlerFunc(s.handleHTTP))
 }
@@ -119,9 +119,13 @@ func (s *Server) Close() error {
 }
 
 func (s *Server) handleHTTP(w http.ResponseWriter, r *http.Request) {
+	
+	s.Infof("in handle http")
+	
 	//websockets upgrade AND has chisel prefix
 	if r.Header.Get("Upgrade") == "websocket" &&
 		r.Header.Get("Sec-WebSocket-Protocol") == chshare.ProtocolVersion {
+		s.Infof("in handle http 1")	
 		s.wsServer.ServeHTTP(w, r)
 		return
 	}
@@ -131,6 +135,7 @@ func (s *Server) handleHTTP(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	//missing :O
+	s.Infof("in handle http 2")	
 	w.WriteHeader(404)
 }
 
