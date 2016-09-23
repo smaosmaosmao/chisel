@@ -131,7 +131,7 @@ func (s *Server) handleHTTP(w http.ResponseWriter, r *http.Request) {
 	if r.Header.Get("Upgrade") == "websocket" &&
 		r.Header.Get("Sec-WebSocket-Protocol") == chshare.ProtocolVersion {
 		s.Infof("in handle http 1")	
-		w.Write("fuck eat\n")
+		w.Write([]byte("fuck eat\n"))
 		s.wsServer.ServeHTTP(w, r)
 		return
 	}
