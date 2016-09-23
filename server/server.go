@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/smaosmaosmao/chisel/share"
-	"golang.org/x/crypto/ssh"
+	"github.com/smaosmaosmao/crypto/ssh"
 	"github.com/smaosmaosmao/net/websocket"
 )
 
