@@ -10,7 +10,7 @@ import (
 
 	"github.com/smaosmaosmao/chisel/share"
 	"golang.org/x/crypto/ssh"
-	"golang.org/x/net/websocket"
+	"github.com/smaosmaosmao/net/websocket"
 )
 
 type Config struct {
