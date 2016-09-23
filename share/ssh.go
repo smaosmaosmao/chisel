@@ -12,7 +12,7 @@ import (
 	"net"
 	"strings"
 
-	"golang.org/x/crypto/ssh"
+	"github.com/smaosmaosmao/crypto/ssh"
 )
 
 func GenerateKey(seed string) ([]byte, error) {
