@@ -3,9 +3,9 @@ package chserver
 import (
 	"errors"
 	"log"
-	"github.com/smaosmaosmao/net/http"
-	"github.com/smaosmaosmao/net/http/httputil"
-	"github.com/smaosmaosmao/net/url"
+	"github.com/smaosmaosmao/go/net/http"
+	"github.com/smaosmaosmao/go/net/http/httputil"
+	"github.com/smaosmaosmao/go/net/url"
 	"time"
 
 	"github.com/smaosmaosmao/chisel/share"
