@@ -3,7 +3,7 @@ package chserver
 import (
 	"errors"
 	"log"
-	"net/http"
+	"github.com/smaosmaosmao/go/net/http"
 	"net/http/httputil"
 	"net/url"
 	"time"
